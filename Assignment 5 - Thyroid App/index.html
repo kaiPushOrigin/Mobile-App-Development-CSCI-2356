@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang=en>
 <head>
@@ -166,22 +165,17 @@
             <input type="date" name="datExamDate" data-mini="false" id="datExamDate" value="">  
           </div>
           <div data-role="fieldcontain">
-            <label for="txtTSH"><abbr title="Thyroid-stimulating hormone">TSH (mIU/L): </abbr></label>
-            <input type="number" step="0.01" placeholder="0" name="txtTSH" data-mini="false" id="txtTSH" value="">
-          </div>  
-          <div data-role="fieldcontain">
-            <label for="txtThyroglobulin">Thyroglobulin (µg/L)[Optional]: </label>
-            <input type="number" step="0.01" placeholder="0" name="txtThyroglobulin" data-mini="false" id="txtThyroglobulin" value="">
-          </div>  
-          <div data-role="fieldcontain">
-            <label for="txtSynthroidDose"><abbr title="Synthroid or Eltroxin">Synthroid*(µg): </abbr></label>
-            <input type="number" step="0.01" placeholder="0" name="txtSynthroidDose" data-mini="false" id="txtSynthroidDose" value="">
+            <label for="heightMeter">Height (meter): </label>
+            <input type="number" min="1" max="9" name="heightMeter" data-mini="false" id="heightMeter" value="">  
           </div>
+          <div data-role="fieldcontain">
+            <label for="weight">Weight (kg): </label>
+            <input type="number" min="0" max="1000"name="weight" data-mini="false" id="weight" value="">  
+          </div> 
         </div>
         <input type="submit" id="btnSubmitRecord" value="">
       </form>
     </div>
-    <p>&nbsp;&nbsp;100 microgram = .0001 gram</p> 
   </div>    
 
  
