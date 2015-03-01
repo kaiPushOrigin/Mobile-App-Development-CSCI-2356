@@ -21,6 +21,7 @@ function checkUserForm()
   if(($("#txtFirstName").val() != "") &&
     ($("#txtLastName").val() != "") &&
     ($("#txtHealthCardNumber").val() != "") &&
+    ($("#txtEmailAddress").val() != "") &&
     ($("#datBirthdate").val() != "") && ($("#datBirthdate").val() <= currentDate)&&
     ($("#slcCancerType option:selected").val()  != "Select Cancer Type") &&
     ($("#slcCancerStage option:selected").val() != "Select Cancer Stage") &&
@@ -43,6 +44,7 @@ function saveUserForm()
     "HealthCardNumber"    : $("#txtHealthCardNumber").val(),
     "NewPassword"           : $("#changePassword").val(),
     "DOB"           : $("#datBirthdate").val(),
+    "EmailAddress" : $("#txtEmailAddress").val(),
     "CancerType"       : $("#slcCancerType option:selected").val(),
     "CancerStage"       : $("#slcCancerStage option:selected").val(),
     "TSHRange"         : $("#slcTSHRange option:selected").val()
@@ -124,6 +126,7 @@ function showUserForm()
     $("#txtLastName").val(user.LastName);
     $("#txtHealthCardNumber").val(user.HealthCardNumber);
     $("#changePassword").val(user.NewPassword);
+    $("#txtEmailAddress").val(user.EmailAddress);
     $("#datBirthdate").val(user.DOB);
     $('#slcCancerType option[value='+user.CancerType+']').attr('selected', 'selected');
     $("#slcCancerType option:selected").val(user.CancerType);

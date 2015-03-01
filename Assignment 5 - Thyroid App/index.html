@@ -18,7 +18,7 @@
   <!-- Start of first page -->
   <div data-role="page" id="pageHome">
     <div data-role="header">
-      <h1>Thyroid Cancer Aide</h1>
+      <h1>Body Mass Index Calculator</h1>
     </div>
     <div data-role="content">
       Password : <input type="password" id="passcode"></input>
@@ -100,36 +100,11 @@
           <div data-role="fieldcontain">
             <label for="txtHealthCardNumber">Health Card Number: </label>
             <input type="text" placeholder="Health Card Number" name="txtHealthCardNumber" data-mini="false" id="txtHealthCardNumber" value="" required>
-          </div>    
+          </div> 
           <div data-role="fieldcontain">
-            <label for="slcCancerType" class="select">Cancer Type: </label>
-            <select name="slcCancerType" id="slcCancerType" data-mini="false" data-native-menu="false" required>
-              <option>Select Cancer Type</option>
-              <option value="Papillary">Papillary</option>
-              <option value="Follicular">Follicular</option>
-              <option value="Medullary">Medullary</option>
-              <option value="Anaplastic">Anaplastic</option>
-            </select>
-          </div>
-          <div data-role="fieldcontain">
-            <label for="slcCancerStage" class="select">Cancer Stage: </label>
-            <select  name="slcCancerStage" id="slcCancerStage"  data-mini="false" data-native-menu="false" required>
-              <option>Select Cancer Stage</option>
-              <option value="StageOne">Stage I</option>
-              <option value="StageTwo">Stage II</option>
-              <option value="StageThree">Stage III</option>
-              <option value="StageFour">Stage IV</option>
-            </select>  
-          </div>    
-          <div data-role="fieldcontain">
-            <label for="slcTSHRange" class="select">Target TSH Range: </label>
-            <select  name="slcTSHRange" id="slcTSHRange"  data-mini="false" data-native-menu="false" required>
-              <option>Select TSH Range</option>
-              <option value="StageA">A: 0.01-0.1 mIU/L</option>
-              <option value="StageB">B: 0.1-0.5 mIU/L</option>
-              <option value="StageC">C: 0.35-2.0 mIU/L</option>
-            </select>  
-          </div>              
+            <label for="txtHealthCardNumber">Email Address: </label>
+            <input type="text" placeholder="abc@xyz.com" name="txtEmailAddress" data-mini="false" id="txtEmailAddress" value="" required>
+          </div>       
         <input type="submit" id="btnUserUpdate" data-icon="check" data-iconpos="left" value="Update" data-inline="true">
       </form>
     </div>
