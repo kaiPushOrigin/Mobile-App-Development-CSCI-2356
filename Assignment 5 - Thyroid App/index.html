@@ -1,7 +1,11 @@
+<!--Kashif Kashif
+A00369617
+Assignment 5, Body Mass Index Calculator-->
+
 <!DOCTYPE html>
 <html lang=en>
 <head>
-  <title>Thyroid Cancer Aide</title>
+  <title>Body Mass Index Calculator</title>
   
   <!--Adjusting the page on mobile screen  -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
@@ -46,7 +50,10 @@
         <a data-role="button" onclick="addValueToPassword('bksp')" data-icon="delete">del</a>
       </div>
     </div>
+    <div data-role="footer">Created by Kashif &copy;</div>
   </div>  
+
+
 
   <!--Disclaimer Page -->
   <div data-role="page" id="legalNotice" data-close-btn="none">
@@ -58,6 +65,7 @@
       <br>
       <a href="#pageUserInfo" id="noticeYes" data-role="button" data-icon ="forward" data-mini ="false">Yes</a>
     </div>
+    <div data-role="footer">Created by Kashif &copy;</div>
   </div> 
   
   <!--About Page -->
@@ -69,6 +77,7 @@
     <div data-role="content">
       [Help and/or Website explanation/information should go here]
     </div>
+    <div data-role="footer">Created by Kashif &copy;</div>
   </div>
   
   <!--User Information Page/Form -->
@@ -107,6 +116,7 @@
         <input type="submit" id="btnUserUpdate" data-icon="check" data-iconpos="left" value="Update" data-inline="true">
       </form>
     </div>
+    <div data-role="footer">Kashif</div>
   </div>
 
   <!-- Menu page -->
@@ -114,7 +124,7 @@
     <div data-role="header">
       <a href="#pageMenu" data-role="button" data-icon="bars" data-iconpos="left" data-inline="true">Menu</a>  
       <a href="#pageAbout" data-role="button" data-icon="info" data-iconpos="right" data-inline="true">Info</a>
-      <h1>Thyroid Cancer Aide</h1>
+      <h1>Body Mass Index Calculator</h1>
     </div>
     <div data-role="content">
       <div data-role="controlgroup">
@@ -124,6 +134,7 @@
         <a href="#pageAdvice" data-role="button">Suggestions</a>
       </div>  
     </div>
+    <div data-role="footer">Created by Kashif &copy;</div>
   </div>
 
   <!-- Records page -->
@@ -148,6 +159,7 @@
         <a href="#" data-role="button" id="btnClearHistory" data-icon="delete">Clear History</a>
       </div>
     </div>
+    <div data-role="footer">Created by Kashif &copy;</div>
   </div>  
   
   <!-- New Record Form page -->
@@ -164,10 +176,22 @@
             <label for="datExamDate">Date: </label>
             <input type="date" name="datExamDate" data-mini="false" id="datExamDate" value="">  
           </div>
-          <div data-role="fieldcontain">
+        <div data-role="main" class="ui-content">
+          <div data-role="collapsible" data-collapsed="true">
+            <h1>Input Height in metres</h1>
             <label for="heightMeter">Height (meter): </label>
-            <input type="number" min="1" max="9" name="heightMeter" data-mini="false" id="heightMeter" value="">  
+            <input type="number" min="1" max="9" name="heightMeter" data-mini="false" id="heightMeter" value="">
           </div>
+        </div>
+        <div data-role="main" class="ui-content">
+          <div data-role="collapsible" data-collapsed="true">
+            <h1>Input Height in Feet and Inches</h1>
+            <label for="heightFeet">Feet</label>
+            <input type="number" min="1" max="9" name="heightFeet" data-mini="false" id="heightFeet" value="">
+            <label for="heightInches">Inches</label>
+            <input type="number" min="1" max="12" name="heightInches" data-mini="false" id="heightInches" value="">
+          </div>
+        </div>
           <div data-role="fieldcontain">
             <label for="weight">Weight (kg): </label>
             <input type="number" min="0" max="1000"name="weight" data-mini="false" id="weight" value="">  
@@ -176,9 +200,8 @@
         <input type="submit" id="btnSubmitRecord" value="">
       </form>
     </div>
+    <div data-role="footer">Created by Kashif &copy;</div>
   </div>    
-
- 
   
   <!--Graph Page -->
   <div data-role="page" id="pageGraph"  class="test">
@@ -197,6 +220,7 @@
     </canvas>
       </div>
     </div> 
+    <div data-role="footer">Created by Kashif &copy;</div>
   </div> 
   
   <!--Advice Page -->
@@ -211,7 +235,10 @@
         style="border:1px solid #000000;">
       </canvas>
     </div>
+      <div data-role="footer">Created by Kashif &copy;</div>
   </div> 
+
+
   
   <!--Custom Javascript/Jquery -->
   <script src="scripts/RGraph.common.core.js"></script>
